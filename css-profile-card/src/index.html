@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CSS Profile Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.8/css/all.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'><link rel="stylesheet" href="./style.css">
+<style>
+		div#faculty2, div#faculty3, div#faculty4, div#faculty5, div#faculty6, div#faculty7{
+		display: none;
+	}
+	#qr_code{
+		margin-top: 5%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 60%;
+	}
+	*{
+		color: white;
+	}
+</style>
+</head>
+<body>
+	<div style="margin-bottom: 5%;margin-top: 2%;">
+		<input checked name='faculty' type='radio' onclick="controlProfile('faculty1')" />
+		<label style='color: black;'>Faculty-1</label>
+		<input name='faculty' type='radio' onclick="controlProfile('faculty2')" />
+		<label style='color: black;'>Faculty-2</label>
+		<input name='faculty' type='radio' onclick="controlProfile('faculty3')" />
+		<label style='color: black;'>Faculty-3</label>
+		<input name='faculty' type='radio' onclick="controlProfile('faculty4')" />
+		<label style='color: black;'>Faculty-4</label>
+		<input name='faculty' type='radio' onclick="controlProfile('faculty5')" />
+		<label style='color: black;'>Faculty-5</label>
+		<input name='faculty' type='radio' onclick="controlProfile('faculty6')" />
+		<label style='color: black;'>Faculty-6</label>
+		<input name='faculty' type='radio' onclick="controlProfile('faculty7')" />
+		<label style='color: black;'>Faculty-7</label>
+	</div>
+<div class="wrapper" id="faculty1" style="background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);">
+	<h4 class="name" style="text-align: center;white-space: nowrap;">Trinity Academy of Engineering</h3>
+	<div class="profile">
+		<img src="https://www.kjei.edu.in/tae/comp_images/NJU.jpg" class="thumbnail">
+		<h3 class="name">Dr. Nilesh Uke</h3>
+		<p class="title">Ph.D. (Computer Science)</p>
+		<p class="title">Principal & Professor</p>
+	</div>
+	<img id='qr_code' src="../images/qrcode.jpeg" class="thumbnail">
+	<p style="text-align: center;padding-top: 2%" class="title">For more Information( Scan Me)</p>
+</div>
+
+<div class="wrapper" id="faculty2" style="background-color: #89d8d3;background-image: linear-gradient(315deg, #FF416C -15%, #FF4B2B 85%);">
+	<h4 class="name" style="text-align: center;white-space: nowrap;">Trinity Academy of Engineering</h3>
+	<div class="profile">
+		<img src="https://www.kjei.edu.in/tae/comp_images/NKHOD.jpg" class="thumbnail">
+		<h3 class="name">Dr. Nikita Kulkarni</h3>
+		<p class="title">Ph.D (Computer Engineering)</p>
+		<p class="title">Associate Professor & HOD</p>
+	</div>
+	<img id='qr_code' src="../images/qrcode.jpeg" class="thumbnail">
+	<p style="text-align: center;padding-top: 2%" class="title">For more Information( Scan Me)</p>
+</div>
+
+<div class="wrapper" id="faculty3" style="background: linear-gradient(316deg, #e7dc0f, #ef5734);">
+	<h4 class="name" style="text-align: center;white-space: nowrap;">Trinity Academy of Engineering</h3>
+	<div class="profile">
+		<img src="https://www.kjei.edu.in/tae/comp_images/PRP.jpg" class="thumbnail">
+		<h3 class="name">Mrs. Pratima R. Patil</h3>
+		<p class="title">M.E.</p>
+		<p class="title">Assistant Professor</p>
+	</div>
+	<img id='qr_code' src="../images/qrcode.jpeg" class="thumbnail">
+	<p style="text-align: center;padding-top: 2%" class="title">For more Information( Scan Me)</p>
+</div>
+
+<div class="wrapper" id="faculty4" style="background: linear-gradient(316deg, #b621fe, #1fd1f9);">
+	<h4 class="name" style="text-align: center;white-space: nowrap;">Trinity Academy of Engineering</h3>
+	<div class="profile">
+		<img src="https://www.kjei.edu.in/tae/comp_images/VAG.jpg" class="thumbnail">
+		<h3 class="name">Ms.Vanita A. Gadekar</h3>
+		<p class="title">M.E.</p>
+		<p class="title">Assistant Professor</p>
+	</div>
+	<img id='qr_code' src="../images/qrcode.jpeg" class="thumbnail">
+	<p style="text-align: center;padding-top: 2%" class="title">For more Information( Scan Me)</p>
+</div>
+
+<div class="wrapper" id="faculty5" style="background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);">
+	<h4 class="name" style="text-align: center;white-space: nowrap;">Trinity Academy of Engineering</h3>
+	<div class="profile">
+		<img src="https://www.kjei.edu.in/tae/comp_images/SSA.jpg" class="thumbnail">
+		<h3 class="name">Ms. Sushadevi S. Adagale</h3>
+		<p class="title">PhD(Pursuing)</p>
+		<p class="title">Assistant Professor</p>
+	</div>
+	<img id='qr_code' src="../images/qrcode.jpeg" class="thumbnail">
+	<p style="text-align: center;padding-top: 2%" class="title">For more Information( Scan Me)</p>
+</div>
+
+<div class="wrapper" id="faculty6" style="background-color: #89d8d3;background-image: linear-gradient(315deg, #FF416C -15%, #FF4B2B 85%);">
+	<h4 class="name" style="text-align: center;white-space: nowrap;">Trinity Academy of Engineering</h3>
+	<div class="profile">
+		<img src="https://www.kjei.edu.in/tae/comp_images/NZ.jpg" class="thumbnail">
+		<h3 class="name">Mrs. Nilufar Zaman</h3>
+		<p class="title">PhD(Pursuing)</p>
+		<p class="title">Assistant Professor</p>
+	</div>
+	<img id='qr_code' src="../images/qrcode.jpeg" class="thumbnail">
+	<p style="text-align: center;padding-top: 2%" class="title">For more Information( Scan Me)</p>
+</div>
+
+<div class="wrapper" id="faculty7" style="background: linear-gradient(316deg, #e7dc0f, #ef5734);">
+	<h4 class="name" style="text-align: center;white-space: nowrap;">Trinity Academy of Engineering</h3>
+	<div class="profile">
+		<img src="https://www.kjei.edu.in/tae/comp_images/AAS.jpg" class="thumbnail">
+		<h3 class="name">Mrs. Alfiya A. Shahbad</h3>
+		<p class="title">M.E.</p>
+		<p class="title">Assistant Professor</p>
+	</div>
+	<img id='qr_code' src="../images/qrcode.jpeg" class="thumbnail">
+	<p style="text-align: center;padding-top: 2%" class="title">For more Information( Scan Me)</p>
+</div>
+
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.js'></script>
+  <script>
+	  function controlProfile(id){
+		  console.log('id: '+id);
+		if(id=='faculty1'){
+			document.getElementById('faculty1').style.display="block";
+			document.getElementById('faculty2').style.display="none";
+			document.getElementById('faculty3').style.display="none";
+			document.getElementById('faculty4').style.display="none";
+			document.getElementById('faculty5').style.display="none";
+			document.getElementById('faculty6').style.display="none";
+			document.getElementById('faculty7').style.display="none";
+		}
+		else if(id=='faculty2'){
+			document.getElementById('faculty1').style.display="none";
+			document.getElementById('faculty2').style.display="block";
+			document.getElementById('faculty3').style.display="none";
+			document.getElementById('faculty4').style.display="none";
+			document.getElementById('faculty5').style.display="none";
+			document.getElementById('faculty6').style.display="none";
+			document.getElementById('faculty7').style.display="none";
+		}
+		else if(id=='faculty3'){
+			document.getElementById('faculty1').style.display="none";
+			document.getElementById('faculty2').style.display="none";
+			document.getElementById('faculty3').style.display="block";
+			document.getElementById('faculty4').style.display="none";
+			document.getElementById('faculty5').style.display="none";
+			document.getElementById('faculty6').style.display="none";
+			document.getElementById('faculty7').style.display="none";
+		}
+		else if(id=='faculty4'){
+			document.getElementById('faculty1').style.display="none";
+			document.getElementById('faculty2').style.display="none";
+			document.getElementById('faculty3').style.display="none";
+			document.getElementById('faculty4').style.display="block";
+			document.getElementById('faculty5').style.display="none";
+			document.getElementById('faculty6').style.display="none";
+			document.getElementById('faculty7').style.display="none";
+		}
+		else if(id=='faculty5'){
+			document.getElementById('faculty1').style.display="none";
+			document.getElementById('faculty2').style.display="none";
+			document.getElementById('faculty3').style.display="none";
+			document.getElementById('faculty4').style.display="none";
+			document.getElementById('faculty5').style.display="block";
+			document.getElementById('faculty6').style.display="none";
+			document.getElementById('faculty7').style.display="none";
+		}
+		else if(id=='faculty6'){
+			document.getElementById('faculty1').style.display="none";
+			document.getElementById('faculty2').style.display="none";
+			document.getElementById('faculty3').style.display="none";
+			document.getElementById('faculty4').style.display="none";
+			document.getElementById('faculty5').style.display="none";
+			document.getElementById('faculty6').style.display="block";
+			document.getElementById('faculty7').style.display="none";
+		}
+		else if(id=='faculty7'){
+			document.getElementById('faculty1').style.display="none";
+			document.getElementById('faculty2').style.display="none";
+			document.getElementById('faculty3').style.display="none";
+			document.getElementById('faculty4').style.display="none";
+			document.getElementById('faculty5').style.display="none";
+			document.getElementById('faculty6').style.display="none";
+			document.getElementById('faculty7').style.display="block";
+		}
+	  }
+  </script>
+</body>
+</html>
